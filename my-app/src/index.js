@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import TextGenerator from "./containers/TextGenerator/TextGenerator";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
+import store from "./store";
+import App from "./components/App";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <TextGenerator />
-      </div>
-    );
-  }
-}
-
-// ========================================
-
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+  //  <Provider store={store}>
+     <Router>
+      <App />,
+     </Router>,
+  // </Provider>,
+  document.getElementById("root")
+);
