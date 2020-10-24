@@ -1,27 +1,38 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import "./Navigation.css";
 
 const Navigation = () => {
-  const activeStyle = { color: '#F15B2A' }
+  const activeStyle = { color: '' }
   return (
-    <div>
-      <NavLink
-        style={{ paddingRight: '15px' }}
+    <div className="nav-container">
+      <div className="navigation-left">
+    <NavLink
+        className="nav-tab"
         activeStyle={activeStyle}
         exact
         to='/'
       >
         Main
       </NavLink>
-      <NavLink activeStyle={activeStyle} to='/CreatePage'>
+      <NavLink         
+        className="nav-tab"
+        activeStyle={activeStyle} to='/CreatePage'>
         Create
       </NavLink>
-      <NavLink activeStyle={activeStyle} to='/'>
+      </div>
+      <div className="navigation-right">
+      <NavLink         
+      className="nav-tab"
+      activeStyle={activeStyle} to='/'>
         Explore
       </NavLink>
-      <NavLink activeStyle={activeStyle} to='/'>
+      <NavLink         
+      className="nav-tab"
+      activeStyle={activeStyle} to='/'>
         About
       </NavLink>
+      </div>
     </div>
   )
 }

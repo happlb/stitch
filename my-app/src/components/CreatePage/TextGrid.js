@@ -18,8 +18,8 @@ class TextGrid extends React.Component {
     return (
       <div>
         <div className="container">
-          {testArray.map((letter) => (
-            <div>{letter}</div>
+          {testArray.map((letter, index) => (
+            <div key={index} >{letter}</div>
           ))}
         </div>
       </div>

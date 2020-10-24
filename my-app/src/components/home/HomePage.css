@@ -1,55 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
-* {
-  box-sizing: border-box;
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 4px;
-}
-.main-container {
+.home-container {
   display: grid;
-  grid-template-rows: 10% 90%;
+  grid-template-rows: 15% 85%;
   grid-template-columns: 50% 17.5% 17.5% 15%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  height: 100%;
+  width: 100%;
 }
-
-.navigation {
-  grid-column-start: 1;
-  grid-column-end: end;
-  grid-row-start: 1;
-  grid-row-end: 2;
-  font-size: 1em;
-}
-.content-left {
+.left {
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: end;
-  background-color: #296f96;
   color: #ffe7ff;
   font-size: 6em;
   text-align: right;
   padding-right: 22.5vw;
-  padding-top: 15vh;
-}
-.content-image {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: end;
-  margin-top: 15vh;
-  height: 75vh;
-  width: auto;
-  text-align: center;
 }
 
-.image {
-  height: 100%;
-  width: auto;
-}
-.content-right {
+.right {
   grid-column-start: 3;
   grid-column-end: end;
   grid-row-start: 2;
@@ -58,87 +25,19 @@
   font-weight: bolder;
   padding-right: 5vw;
   color: #296f96;
-  background-color: #ffe7ff;
   writing-mode: vertical-rl;
-  padding-top: 15vh;
 }
-
-/* .nav {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  background-color: #f5f5f5;
-}
-
-.main-content {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  background-image: url("../../images/DMC-thread.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-
-  display: grid;
-  grid-template-rows: 20px minmax(185px, auto) minmax(auto, 65%) 20px;
-  grid-template-columns: 20px 10% auto auto 10% 20px;
-}
-
-.text-input {
+.home-image {
   grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 2;
-  grid-row-end: 3;
-  background-color: #f5f5f5;
-  border: 3px solid black;
+  grid-row-end: end;
+  height: 85vh;
+  width: auto;
+  text-align: center;
 }
 
-.settings {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  background-color: #f5f5f5;
-  border: 3px solid black;
-}
-
-.text-grid {
-  grid-column-start: 3;
-  grid-column-end: 6;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background-color: #f5f5f5;
-  border: 3px solid black;
-}
-
-textarea {
-  all: unset;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-} */
-
-/* .footer {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  background-color: #f5f5f5;
-} */
-/* 
 .image {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  background-color: #086b9b;
-} */
-/* 
-.info {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  background-color: #b03821;
-} */
+  height: 100%;
+  width: auto;
+}

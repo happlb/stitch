@@ -4,6 +4,7 @@
   grid-template-columns: 67.5% 32.5%;
   height: 100%;
   width: 100%;
+  background-color: transparent;
 }
 
 .navigation-left {
@@ -12,7 +13,6 @@
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: #296f96;
   color: #ffe7ff;
   text-align: center;
 }
@@ -23,12 +23,11 @@
   grid-column-end: end;
   grid-row-start: 1;
   grid-row-end: 2;
-  background-color: #ffe7ff;
   color: #296f96;
   text-align: center;
 }
 
-nav > a {
+.nav-tab {
   font-size: 1.5em;
   font-weight: bold;
   padding: 3em;

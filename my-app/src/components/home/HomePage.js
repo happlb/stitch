@@ -1,18 +1,19 @@
 import React from "react";
+import "./HomePage.css"
 
 const HomePage = () => (
-  <div className="main-container">
-  <div className="content-left">
+  <div className="home-container">
+  <div className="left">
     Cross Stitch
     <br />
     Text Widget &nbsp;&nbsp;&nbsp;&nbsp;
   </div>
-  <div className="content-right">S T I T C H</div>
-  <div className="content-image">
+  <div className="right">S T I T C H</div>
+  <div className="home-image">
     <img
       className="image"
       src={require("../../images/exfoliate.JPG")}
-      alt="Graduation"
+      alt="cross stitch"
     />
   </div>
 </div>

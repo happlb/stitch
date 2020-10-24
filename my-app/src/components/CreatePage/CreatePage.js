@@ -5,9 +5,8 @@ import TextGrid from "./TextGrid"
 export const CreatePage = () => (
   // <MyPageContainer>
   <div>
-  <TextGrid/>
+    <TextGrid/>
   </div>
-
 )
 
 export default CreatePage
