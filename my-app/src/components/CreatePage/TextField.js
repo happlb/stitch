@@ -11,13 +11,13 @@ class TextField extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      gridText: '',
+       gridText: '',
     };
     this.handleChange = this.handleChange.bind(this);
   }
   handleChange(event) {
     this.setState({gridText: event.target.value});
-    updateText(event, this.state.gridText)
+    updateText(event,  event.target.value)
   }
   
 
