@@ -1,18 +1,29 @@
-.containerz {
+.textgrid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(50px, auto));
-  background-color: blue;
-  padding: 20px;
+  grid-template-columns: repeat(150, 0.6vw);
+  grid-template-rows: repeat(45, 0.6vw);
+  max-height: 65vh;
+  overflow: auto;
 }
 
-.containerz > div {
+/* .row {
+  display: grid;
+  grid: repeat(1, 3px) / auto-flow;
+}
+
+.row > .square {
+  margin: 1px;
+  background: tomato;
+} */
+
+/* .textgrid-container > div {
   background: white;
   outline: 1px solid black;
   padding: 1rem;
 }
 
-.containerz > div::before {
+.textgrid-container > div::before {
   content: "";
   padding-bottom: 100%;
   display: block;
-}
+} */

@@ -1,0 +1,41 @@
+.create-container {
+  display: grid;
+  grid-template-rows: 5% 15% 65% 5%;
+  grid-template-columns: 5% 62.5% 27.5% 5%;
+  height: 100%;
+  width: 100%;
+}
+
+.textfield {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.settings {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: #296f96;
+}
+
+.textgrid {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  background-color: transparent;
+  overflow: auto;
+  height: 65vh;
+}
+
+textarea {
+  all: unset;
+  background-color: #f8f8ff;
+  padding-left: 5px;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+}
