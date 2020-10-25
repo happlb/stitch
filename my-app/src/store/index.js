@@ -1,6 +1,6 @@
 // import {createReducer} from "redux"
 import { configureStore } from '@reduxjs/toolkit'
-import rootReducer from './reducers/recipies.js'
+import rootReducer from './reducers/textWidget.js'
 
 export default configureStore({
   reducer: rootReducer,

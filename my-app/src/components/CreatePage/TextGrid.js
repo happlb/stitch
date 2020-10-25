@@ -6,21 +6,16 @@ class TextGrid extends React.Component {
     super(props);
     this.state = {
       testArray: new Array(45).fill(new Array(150).fill(0)),
+      current: [0,0],
     };
   }
-  //   renderSquare(i) {
-  //     return <Square />;
-  //   }
 
   
 
   render() {
-   //  const testArray = new Array(168).fill(new Array(168).fill(0));
     return (
         <div className="textgrid-container">
            {this.state.testArray.map((letter, index) => (
-              // letter.length > index &&  (
-            //  <div className="row" key={index} >
               letter.map((m, j) => (
                   <div style={{
                     gridColumn: `${j+1} /${j+2}`,

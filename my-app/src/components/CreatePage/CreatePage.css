@@ -30,12 +30,3 @@
   overflow: auto;
   height: 65vh;
 }
-
-textarea {
-  all: unset;
-  background-color: #f8f8ff;
-  padding-left: 5px;
-  font-family: "Poppins", sans-serif;
-  height: 100%;
-  width: 100%;
-}

@@ -1,0 +1,13 @@
+textarea {
+  all: unset;
+  background-color: #f8f8ff;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+.textfield-container {
+  height: 100%;
+  width: 100%;
+  border: 2vh solid #ffe7ff;
+}

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 import "./Navigation.css";
 
 const Navigation = () => {
-  const activeStyle = { color: '' }
+  const activeStyle = { paddingBottom: 'unset' }
   return (
     <div className="nav-container">
       <div className="navigation-left">
