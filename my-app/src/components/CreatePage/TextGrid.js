@@ -1,4 +1,6 @@
 import React from "react";
+import store from '../../store'
+import { connect } from 'react-redux'
 import "./TextGrid.css";
 
 class TextGrid extends React.Component {
@@ -6,13 +8,24 @@ class TextGrid extends React.Component {
     super(props);
     this.state = {
       testArray: new Array(45).fill(new Array(150).fill(0)),
-      current: [0,0],
+      // testString: 'hello'
     };
   }
+componentDidUpdate(prevProps ){
+  console.log(this.props,'props');
 
-  
+ if(prevProps.gridText !== this.props.gridText){
+    var tempArray =new Array(45).fill(new Array(150).fill(0))
+    for(var i=0; i < this.props.gridText.length; i++ ){
+       tempArray[0][i] = 1
+    }
+    this.setState({testArray: tempArray});
+    console.log(this.state.testArray,'here');
+  }
+}
 
   render() {
+    console.log(this.state.testArray,'testarray');
     return (
         <div className="textgrid-container">
            {this.state.testArray.map((letter, index) => (
@@ -30,4 +43,8 @@ class TextGrid extends React.Component {
               }
             }
 
-export default TextGrid;
+export default connect(mapStateToProps)(TextGrid);
+
+function mapStateToProps (state) {
+  return { gridText: state.gridText }
+}
