@@ -1,7 +1,7 @@
 .textgrid-container {
   display: grid;
-  grid-template-columns: repeat(150, 0.6vw);
-  grid-template-rows: repeat(45, 0.6vw);
+  /* grid-template-columns: repeat(150, 0.6vw);
+  grid-template-rows: repeat(45, 0.6vw); */
   max-height: 65vh;
   overflow: auto;
 }
