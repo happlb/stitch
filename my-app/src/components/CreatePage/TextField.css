@@ -8,6 +8,6 @@ textarea {
 
 .textfield-container {
   height: 100%;
-  width: 100%;
-  border: 2vh solid #ffe7ff;
+  margin: 10px;
+  outline: 10px solid #ffe7ff;
 }

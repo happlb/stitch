@@ -1,23 +1,23 @@
-import React from 'react'
-import TextGrid from "./TextGrid"
-import Settings from "./Settings"
-import TextField from "./TextField"
-import "./CreatePage.css"
+import React from "react";
+import TextGrid from "./TextGrid";
+import Settings from "./Settings";
+import TextField from "./TextField";
+import "./CreatePage.css";
 // import { MyPageContainer, MyIngredentContainer } from './styles'
 
 export const CreatePage = () => (
   // <MyPageContainer>
   <div className="create-container">
     <div className="textfield">
-      <TextField/>
+      <TextField />
     </div>
     <div className="settings">
-      <Settings/>
+      <Settings />
     </div>
     <div className="textgrid">
-    <TextGrid/>
+      <TextGrid />
+    </div>
   </div>
-  </div>
-)
+);
 
-export default CreatePage
+export default CreatePage;
